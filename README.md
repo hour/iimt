@@ -1,3 +1,6 @@
+# In-Image Machine Translation
+This is a pipeline to translate scene text from one language to another by leveraging publicly available models for text detection, recognition, and translation. We also provide a training script for SRNet to support cross-lingual image text replacement.
+
 # Dependency
 - Python==3.12.0
 - CUDA==12.2.2
