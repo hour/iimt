@@ -14,7 +14,7 @@ conda install conda-forge::opencv
 pip install -r requirements.txt
 ```
 
-To use the "みんなの自動翻訳@TexTra" service, you need [trans](https://github.com/ideuchi/trans).
+(Optional) To use the "みんなの自動翻訳@TexTra" service, you need [trans](https://github.com/ideuchi/trans).
 ```
 git clone https://github.com/ideuchi/trans
 
@@ -24,6 +24,14 @@ export TEXTRA_KEY=<your api_key>
 export TEXTRA_SECRET=<your api_secret>
 
 # visit https://mt-auto-minhon-mlt.ucri.jgn-x.jp to get your free account
+```
+
+# Run translate.py
+```
+python translate.py <input_image_or_video_path> <output_image_or_video_path>
+
+# with a configuration
+python translate.py -c configs/textra.yaml <input_image_or_video_path> <output_image_or_video_path>
 ```
 
 # Basic Usage
@@ -102,14 +110,6 @@ for frame_index, frame in enumerate(out_frames):
     video.replace(frame, frame_index)
 
 video.save("data/out_video.mp4")
-```
-
-# Run translate.py
-```
-python translate.py <input_image_or_video_path> <output_image_or_video_path>
-
-# with a configuration
-python translate.py -c configs/textra.yaml <input_image_or_video_path> <output_image_or_video_path>
 ```
 
 # Citation
