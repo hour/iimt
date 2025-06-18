@@ -14,7 +14,7 @@ conda install conda-forge::opencv
 pip install -r requirements.txt
 ```
 
-(Optional) To use the "みんなの自動翻訳@TexTra" service, you need [trans](https://github.com/ideuchi/trans).
+(Optional) The default translation model is NLLB. If you would like to use the "みんなの自動翻訳@TexTra" translation service, you need [trans](https://github.com/ideuchi/trans).
 ```
 git clone https://github.com/ideuchi/trans
 
