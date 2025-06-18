@@ -26,14 +26,6 @@ export TEXTRA_SECRET=<your api_secret>
 # visit https://mt-auto-minhon-mlt.ucri.jgn-x.jp to get your free account
 ```
 
-# Run translate.py
-```
-python translate.py <input_image_or_video_path> <output_image_or_video_path>
-
-# with a configuration
-python translate.py -c configs/textra.yaml <input_image_or_video_path> <output_image_or_video_path>
-```
-
 # Basic Usage
 Build joint text detector and recognizer
 ```
@@ -110,6 +102,14 @@ for frame_index, frame in enumerate(out_frames):
     video.replace(frame, frame_index)
 
 video.save("data/out_video.mp4")
+```
+
+# Run translate.py
+```
+python translate.py <input_image_or_video_path> <output_image_or_video_path>
+
+# with a configuration
+python translate.py -c configs/textra.yaml <input_image_or_video_path> <output_image_or_video_path>
 ```
 
 # Citation
