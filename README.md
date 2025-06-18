@@ -47,7 +47,7 @@ translator = NLLBTranslator(
 
 # or using the みんなの自動翻訳@TexTra service
 from iimt.translator.textra import TexTraTranslator
-model = TexTraTranslator(
+translator = TexTraTranslator(
     src_lang='en',
     trg_lang='ja',
 )
