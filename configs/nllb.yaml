@@ -1,0 +1,14 @@
+detector:
+  name: "fast_base"
+recognizer:
+  name: "crnn_vgg16_bn"
+editor:
+  model_path: "srnet/models/train_step-500000.model"
+  font_path: "srnet/SRNet-Datagen/data/fonts/japanese_ttf/HinaMincho-Regular.ttf"
+  bbox_margin: 30
+translator:
+  name: "nllb"
+  model_name: "facebook/nllb-200-distilled-600M"
+  trg_lang: "jpn_Jpan"
+common:
+  gpu: False

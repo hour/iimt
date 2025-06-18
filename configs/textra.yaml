@@ -1,0 +1,17 @@
+detector:
+  name: "fast_base"
+recognizer:
+  name: "crnn_vgg16_bn"
+editor:
+  model_path: "srnet/models/train_step-500000.model"
+  font_path: "srnet/SRNet-Datagen/data/fonts/japanese_ttf/HinaMincho-Regular.ttf"
+  bbox_margin: 30
+translator:
+  name: "textra"
+  textra_user_id: "<your user_id>"
+  textra_api_key: "<your api_key>"
+  textra_api_secret: "<your api_secret>"
+  src_lang: "en"
+  trg_lang: "ja"
+common:
+  gpu: False
